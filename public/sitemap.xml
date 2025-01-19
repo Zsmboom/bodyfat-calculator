@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bodyfat-calculator.com/</loc>
+    <loc>https://bodyfat-calculator.net/</loc>
     <lastmod>2024-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bodyfat-calculator.com/body-fat-guide</loc>
+    <loc>https://bodyfat-calculator.net/body-fat-guide</loc>
     <lastmod>2024-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bodyfat-calculator.com/calorie-deficit</loc>
+    <loc>https://bodyfat-calculator.net/calorie-deficit</loc>
     <lastmod>2024-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bodyfat-calculator.com/meditation</loc>
+    <loc>https://bodyfat-calculator.net/meditation</loc>
     <lastmod>2024-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bodyfat-calculator.com/healthy-living</loc>
+    <loc>https://bodyfat-calculator.net/healthy-living</loc>
     <lastmod>2024-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bodyfat-calculator.net/bmi-calculator</loc>
+    <lastmod>2024-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset> 

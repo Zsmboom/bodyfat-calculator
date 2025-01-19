@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://bodyfat-calculator.com/sitemap.xml
+Sitemap: https://bodyfat-calculator.net/sitemap.xml
 
 # Allow all robots complete access
 Disallow: 

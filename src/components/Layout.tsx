@@ -24,6 +24,7 @@ const Layout = () => {
         <meta property="og:title" content="Body Fat Calculator | Health and Wellness Hub" />
         <meta property="og:description" content="Calculate your body fat percentage accurately. Get personalized health insights and wellness tips." />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://bodyfat-calculator.net" />
         
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +34,7 @@ const Layout = () => {
         {/* Additional SEO meta tags */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://bodyfat-calculator.com" />
+        <link rel="canonical" href="https://bodyfat-calculator.net" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">
