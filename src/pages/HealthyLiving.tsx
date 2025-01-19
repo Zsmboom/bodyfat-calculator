@@ -19,13 +19,13 @@ const HealthyLiving = () => {
           name="keywords"
           content="healthy living, nutrition, exercise, mental health, wellness, physical health, mental well-being, regular checkups, lifestyle tips, balanced diet"
         />
-        <link rel="canonical" href="/healthy-living" />
+        <link rel="canonical" href="https://bodyfat-calculator.net/healthy-living" />
         
         {/* Open Graph tags for social sharing */}
         <meta property="og:title" content="Healthy Living Guide | Wellness Tips & Advice | HealthHub" />
         <meta property="og:description" content="Discover comprehensive approaches to maintaining physical and mental well-being through proper nutrition, exercise, and healthy lifestyle choices." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/healthy-living" />
+        <meta property="og:url" content="https://bodyfat-calculator.net/healthy-living" />
         
         {/* Schema.org markup for rich results */}
         <script type="application/ld+json">

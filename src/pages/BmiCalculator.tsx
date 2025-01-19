@@ -18,12 +18,12 @@ const BmiCalculator = () => {
           name="keywords"
           content="BMI calculator, body mass index calculator, weight calculator, healthy weight calculator, BMI chart, BMI categories, weight status calculator"
         />
-        <link rel="canonical" href="/bmi-calculator" />
+        <link rel="canonical" href="https://bodyfat-calculator.net/bmi-calculator" />
         {/* Open Graph tags for social sharing */}
         <meta property="og:title" content="BMI Calculator | Body Mass Index Calculator | HealthHub" />
         <meta property="og:description" content="Calculate your Body Mass Index (BMI) instantly. Understand your weight status and get personalized health recommendations." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/bmi-calculator" />
+        <meta property="og:url" content="https://bodyfat-calculator.net/bmi-calculator" />
         {/* Schema.org markup for rich results */}
         <script type="application/ld+json">
           {JSON.stringify({

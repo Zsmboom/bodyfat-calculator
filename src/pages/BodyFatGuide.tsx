@@ -21,13 +21,13 @@ const BodyFatGuide = () => {
           name="keywords"
           content="body fat, visceral fat, abdominal fat, fatty liver, health risks, fat reduction, healthy lifestyle, body composition, fat distribution, metabolic health"
         />
-        <link rel="canonical" href="/body-fat-guide" />
+        <link rel="canonical" href="https://bodyfat-calculator.net/body-fat-guide" />
         
         {/* Open Graph tags for social sharing */}
         <meta property="og:title" content="Body Fat Guide | Types of Body Fat & Health Impacts | HealthHub" />
         <meta property="og:description" content="Learn about different types of body fat, their health impacts, and effective strategies for maintaining healthy body composition." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/body-fat-guide" />
+        <meta property="og:url" content="https://bodyfat-calculator.net/body-fat-guide" />
         
         {/* Schema.org markup for rich results */}
         <script type="application/ld+json">

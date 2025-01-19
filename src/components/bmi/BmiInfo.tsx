@@ -1,7 +1,7 @@
 import React from 'react';
 import { Info } from 'lucide-react';
 
-const BmiInfo = () => {
+const BmiInfo: React.FC = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <div className="flex items-center space-x-2 mb-4">

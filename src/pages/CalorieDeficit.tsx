@@ -18,12 +18,12 @@ const CalorieDeficit = () => {
           name="keywords"
           content="calorie deficit calculator, weight loss calculator, TDEE calculator, daily calorie needs, weight loss planning, healthy weight loss, calorie counting, metabolism calculator"
         />
-        <link rel="canonical" href="/calorie-deficit" />
+        <link rel="canonical" href="https://bodyfat-calculator.net/calorie-deficit" />
         {/* Open Graph tags */}
         <meta property="og:title" content="Calorie Deficit Calculator | Weight Loss Planning" />
         <meta property="og:description" content="Calculate your ideal calorie deficit for healthy weight loss. Get personalized daily calorie targets and expert nutrition advice." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/calorie-deficit" />
+        <meta property="og:url" content="https://bodyfat-calculator.net/calorie-deficit" />
         {/* Schema.org markup */}
         <script type="application/ld+json">
           {JSON.stringify({

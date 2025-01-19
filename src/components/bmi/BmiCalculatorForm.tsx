@@ -7,24 +7,36 @@ interface BmiResult {
   color: string;
 }
 
-const BmiCalculatorForm = () => {
-  const [height, setHeight] = useState('');
-  const [weight, setWeight] = useState('');
+const BmiCalculatorForm: React.FC = () => {
+  const [height, setHeight] = useState<string>('');
+  const [weight, setWeight] = useState<string>('');
   const [result, setResult] = useState<BmiResult | null>(null);
+  const [error, setError] = useState<string>('');
+
+  const validateInput = (value: number, min: number, max: number, field: string): boolean => {
+    if (value < min || value > max) {
+      setError(`${field}输入范围应在 ${min} - ${max} 之间`);
+      return false;
+    }
+    return true;
+  };
 
   const calculateBMI = (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
     
     const heightInMeters = parseFloat(height) / 100; // Convert cm to meters
     const weightInKg = parseFloat(weight);
     
-    if (heightInMeters > 0 && weightInKg > 0) {
-      const bmi = weightInKg / (heightInMeters * heightInMeters);
-      const category = getBmiCategory(bmi);
-      const color = getBmiColor(bmi);
-      
-      setResult({ bmi, category, color });
-    }
+    // Validate input ranges
+    if (!validateInput(parseFloat(height), 50, 250, '身高')) return;
+    if (!validateInput(weightInKg, 20, 300, '体重')) return;
+
+    const bmi = weightInKg / (heightInMeters * heightInMeters);
+    const category = getBmiCategory(bmi);
+    const color = getBmiColor(bmi);
+    
+    setResult({ bmi, category, color });
   };
 
   const getBmiCategory = (bmi: number): string => {
@@ -41,6 +53,14 @@ const BmiCalculatorForm = () => {
     return 'text-red-600';
   };
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, setter: (value: string) => void) => {
+    const value = e.target.value;
+    if (value === '' || /^\d*\.?\d*$/.test(value)) {
+      setter(value);
+      setError('');
+    }
+  };
+
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <form onSubmit={calculateBMI} className="space-y-6">
@@ -52,11 +72,18 @@ const BmiCalculatorForm = () => {
             type="number"
             id="height"
             value={height}
-            onChange={(e) => setHeight(e.target.value)}
+            onChange={(e) => handleInputChange(e, setHeight)}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
             placeholder="例如：170"
+            min="50"
+            max="250"
+            step="0.1"
             required
+            aria-describedby="height-description"
           />
+          <p className="mt-1 text-sm text-gray-500" id="height-description">
+            请输入50-250厘米之间的值
+          </p>
         </div>
 
         <div>
@@ -67,12 +94,25 @@ const BmiCalculatorForm = () => {
             type="number"
             id="weight"
             value={weight}
-            onChange={(e) => setWeight(e.target.value)}
+            onChange={(e) => handleInputChange(e, setWeight)}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
             placeholder="例如：65"
+            min="20"
+            max="300"
+            step="0.1"
             required
+            aria-describedby="weight-description"
           />
+          <p className="mt-1 text-sm text-gray-500" id="weight-description">
+            请输入20-300公斤之间的值
+          </p>
         </div>
+
+        {error && (
+          <div className="text-red-600 text-sm">
+            {error}
+          </div>
+        )}
 
         <button
           type="submit"

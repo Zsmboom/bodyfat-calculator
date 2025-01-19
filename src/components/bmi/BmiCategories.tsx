@@ -1,7 +1,15 @@
 import React from 'react';
 import { Scale } from 'lucide-react';
 
-const categories = [
+interface BmiCategory {
+  range: string;
+  category: string;
+  description: string;
+  color: string;
+  risks: string[];
+}
+
+const categories: BmiCategory[] = [
   {
     range: '< 18.5',
     category: '体重过轻',
@@ -32,7 +40,7 @@ const categories = [
   }
 ];
 
-const BmiCategories = () => {
+const BmiCategories: React.FC = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <div className="flex items-center space-x-2 mb-6">

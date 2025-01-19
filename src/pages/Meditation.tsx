@@ -18,13 +18,13 @@ const Meditation = () => {
           name="keywords"
           content="meditation, mindfulness, stress reduction, mental health, meditation techniques, meditation benefits, meditation guide, mindfulness practice, stress management"
         />
-        <link rel="canonical" href="/meditation" />
+        <link rel="canonical" href="https://bodyfat-calculator.net/meditation" />
         
         {/* Open Graph tags for social sharing */}
         <meta property="og:title" content="Meditation Guide | Mindfulness & Stress Reduction | HealthHub" />
         <meta property="og:description" content="Learn meditation techniques and discover the benefits of mindfulness practice for stress reduction and mental well-being." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/meditation" />
+        <meta property="og:url" content="https://bodyfat-calculator.net/meditation" />
         
         {/* Schema.org markup for rich results */}
         <script type="application/ld+json">

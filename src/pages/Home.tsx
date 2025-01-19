@@ -18,12 +18,12 @@ const Home = () => {
           name="keywords"
           content="body fat calculator, body composition analysis calculator, body fat percentage calculator, BMI calculator, body measurements calculator, healthy body fat range, body composition test, fat percentage measurement"
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://bodyfat-calculator.net" />
         {/* Open Graph tags for social sharing */}
         <meta property="og:title" content="Body Fat Calculator | Body Composition Analysis | HealthHub" />
         <meta property="og:description" content="Calculate your body fat percentage accurately using our advanced body composition analysis tools. Get personalized health insights and recommendations." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/" />
+        <meta property="og:url" content="https://bodyfat-calculator.net" />
         {/* Schema.org markup for rich results */}
         <script type="application/ld+json">
           {JSON.stringify({
