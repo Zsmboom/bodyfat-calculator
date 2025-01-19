@@ -12,16 +12,62 @@ const BodyFatGuide = () => {
   return (
     <>
       <Helmet>
-        <title>Body Fat Guide - Understanding Body Fat | HealthHub</title>
+        <title>Body Fat Guide | Types of Body Fat & Health Impacts | HealthHub</title>
         <meta
           name="description"
           content="Comprehensive guide to understanding different types of body fat, health risks, and effective management strategies. Learn about visceral fat, abdominal fat, fatty liver, and more."
         />
         <meta
           name="keywords"
-          content="body fat, visceral fat, abdominal fat, fatty liver, health risks, fat reduction, healthy lifestyle"
+          content="body fat, visceral fat, abdominal fat, fatty liver, health risks, fat reduction, healthy lifestyle, body composition, fat distribution, metabolic health"
         />
-        <link rel="canonical" href="/body-fat" />
+        <link rel="canonical" href="/body-fat-guide" />
+        
+        {/* Open Graph tags for social sharing */}
+        <meta property="og:title" content="Body Fat Guide | Types of Body Fat & Health Impacts | HealthHub" />
+        <meta property="og:description" content="Learn about different types of body fat, their health impacts, and effective strategies for maintaining healthy body composition." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/body-fat-guide" />
+        
+        {/* Schema.org markup for rich results */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "name": "Body Fat Guide",
+            "description": "Comprehensive guide to understanding different types of body fat and their health impacts.",
+            "author": {
+              "@type": "Organization",
+              "name": "HealthHub"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "HealthHub"
+            },
+            "headline": "Understanding Body Fat Types and Their Health Impacts",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "/body-fat-guide"
+            },
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Visceral Fat",
+                "description": "Understanding visceral fat and its health implications"
+              },
+              {
+                "@type": "Thing",
+                "name": "Abdominal Fat",
+                "description": "Information about abdominal fat and its health risks"
+              },
+              {
+                "@type": "Thing",
+                "name": "Fatty Liver",
+                "description": "Understanding fatty liver disease and prevention"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 py-12">

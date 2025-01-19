@@ -9,16 +9,49 @@ const Meditation = () => {
   return (
     <>
       <Helmet>
-        <title>Meditation Guide | HealthHub</title>
+        <title>Meditation Guide | Mindfulness & Stress Reduction | HealthHub</title>
         <meta
           name="description"
           content="Learn about meditation, its benefits, and how to start your meditation practice. Discover techniques for mindfulness and stress reduction through meditation."
         />
         <meta
           name="keywords"
-          content="meditation, mindfulness, stress reduction, mental health, meditation techniques, meditation benefits, meditation guide"
+          content="meditation, mindfulness, stress reduction, mental health, meditation techniques, meditation benefits, meditation guide, mindfulness practice, stress management"
         />
         <link rel="canonical" href="/meditation" />
+        
+        {/* Open Graph tags for social sharing */}
+        <meta property="og:title" content="Meditation Guide | Mindfulness & Stress Reduction | HealthHub" />
+        <meta property="og:description" content="Learn meditation techniques and discover the benefits of mindfulness practice for stress reduction and mental well-being." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/meditation" />
+        
+        {/* Schema.org markup for rich results */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Meditation Guide",
+            "description": "Learn meditation techniques and discover mindfulness practices for stress reduction.",
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Introduction to Meditation",
+                "text": "Understanding the basics of meditation and mindfulness"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Benefits of Meditation",
+                "text": "Discover the physical and mental benefits of regular meditation practice"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Getting Started",
+                "text": "Learn practical techniques to start your meditation practice"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
